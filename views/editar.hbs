@@ -1,0 +1,19 @@
+<div>
+    <form action="/editar" method="post">
+    <input type="hidden" name="id" value="{{convidado._id}}">
+    <div>
+        <label for="idNome">Nome:</label>
+        <input type="text" name="nome" placeholder="Nome" id="idNome" value="{{convidado.nome}}">
+    </div>
+    <div>
+        <label for="idIdade">Idade:</label>
+        <input type="number" name="age" placeholder="idade" id="idIdade" value="{{convidado.age}}">
+    </div>
+    <div>
+        <label for="idEmail">Email:</label>
+        <input type="email" name="email" placeholder="Email" id="idEmail" value="{{convidado.email}}">
+    </div>
+    <div><input type="submit" value="Atualizar">
+    </div>
+    </form>
+</div>

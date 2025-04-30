@@ -1,0 +1,26 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>EMAIL</th>
+            <th>AÇÕES</th>   
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each  lista}}
+    <tr>
+        <td>{{this._id}}</td>
+        <td>{{this.nome}}</td>
+        <td>{{this.age}}</td>
+        <td>{{this.email}}</td>
+        <td><a href="/editar/{{_id}}">EDITAR</a> / <a href="/excluir/{{_id}}">EXCLUIR</a></td> 
+
+
+    </tr>
+    {{/each}}
+    </tbody>
+
+</table>
